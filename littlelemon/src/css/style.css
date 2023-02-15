@@ -1,0 +1,306 @@
+*{
+    font-family: "Markazi Text", "Karla", serif;
+    box-sizing: border-box;
+}
+label, input, select, textarea, p {
+    font-family: "Karla";
+}
+.nav{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    justify-content: center;
+}
+.logo-image{
+    padding: 0.7rem;
+    text-align: center;
+}
+.nav-item{
+    display: inline-block;
+    margin: 0% 3.5%;
+    padding: 0.82em 1em !important;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+.nav-item:hover{
+        background-color: #f4ce14;
+        transition: 0.25s;
+}
+.main-content{
+    text-align: left;
+    color:#EDEFEE;
+    padding: 1.25rem 5rem 1.2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    background-color: rgb(73,94,87);
+}
+.content > h1{
+    font-size: 3rem;
+    margin-top: 0rem;
+    margin-bottom: -2rem;
+    color: rgb(244, 206, 20);
+}
+.content > h2{
+        font-size: 2rem;
+}
+.sub-section{
+    font-weight: 200;
+}
+
+.img-content{
+    max-height: 17rem;
+    padding-left: 2rem;
+}
+.img-content >.restaurant-image{
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+}
+.btnHome,.btn-book-table{
+    word-wrap: break-word;
+    width: 150px; 
+    height: 50px;
+    max-width: 100%;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: rgb(244, 206, 20);
+    font-size: 1em;
+    font-weight: bold;
+}
+.btnHome:hover{
+    cursor: pointer;
+    background-color: rgb(73,94,87);
+    color:#EDEFEE;
+    border:1px solid white;
+}
+.btn-menu{
+    background-color: rgb(244, 206, 20);
+    border-radius: 0.2rem;
+    font-weight: bold;
+    width: 150px; 
+    height: 50px;
+    max-width: 100%;
+    height: 4em;
+    box-shadow: none;
+    border: none;
+    margin-top: 1.5rem; 
+}
+.special{
+    padding: 0rem 5rem;
+}
+.highlights{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+.today-special{
+    font-size: 2rem;
+}
+.card-section{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-gap: 2vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+.card-info{
+    border-radius: 0.2rem;
+    background-color: rgb(236, 236, 236);
+    padding-bottom: 2rem;
+}
+.card-info > img {
+    height: 25vh;
+    width: 100%;
+    object-fit: cover;
+ }
+ .cardHeading .alignRight{
+        color:orange;
+    }
+.card-content{
+    margin: 1rem 2rem 2rem  1rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.card-content > h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.cardDesc{
+    margin:1rem;
+    text-align: justify;
+    font-weight: 150;
+    padding-bottom: 1rem;
+}
+a:visited, Link:visited, a:link, Link:link {
+    text-decoration: none;
+    color: black;
+}
+.special-button {
+    background-color: #f4ce14;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1.5rem 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+.testimonial-title > h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.testimonial-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2vw;
+}
+.testimonial-card{
+    background-color: rgb(236, 236, 236);
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 2rem;
+}
+.testimonial-about-us{
+    background-color: #f4ce14;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-rows: 300px;
+    padding: 1.25rem; 
+    margin-bottom: -1rem;
+}
+.testimonial-about-us > img {
+    width: 3rem;
+    height: 3rem
+}
+.restaurant-title> h1 {
+    font-size: 3rem;
+    margin-top: 0rem;
+    margin-bottom: -3rem;
+}
+.restaurant-title > h2 {
+    font-size: 2.5rem;
+}
+.about-us-image{
+    max-height: 15rem;
+    position: relative;
+    top: 4rem;
+    left: 8rem; 
+}
+.about-us-image >img{
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-us-image1{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.about-us-image2{
+    position: absolute;
+    top: -3.5rem;
+    left: 5rem;
+}
+    /* Booking Form styles*/
+.form-fields{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 5px;;
+}
+.bookinghead1{
+    margin: 0 auto;
+    font-size :3em;
+}
+.footer-menu { 
+    background-color: #495e57;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+.img-footer > img {
+    max-height: 10rem;
+    margin: 1.5rem 0rem;
+    background-color: white;
+    padding: 0.5rem;
+}
+.footer-nav {
+    text-align: center;
+}
+.footer-links{
+    display: inline-block;
+    margin-top: 0rem;
+}
+.footer-links > a, .footer-links > Link, .footer-links > li {
+    text-align: left;
+    display: block;
+    color: white;
+    padding-top: 0.2rem;
+    font-family: "Karla", "Sans Serif";
+}
+.confirmation-header {
+    position: relative;
+    text-align: center;
+    color: white;
+    min-height: 70vh;
+}
+.confirmation-image {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+.reserve-header-text {
+    background-color: #495e57;
+    padding: 0 3rem 0 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    border-radius: 0.5rem;
+}
+.reserve-table {
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+.header-reserve {
+    width: 100vw;
+    height: 16rem;
+    object-fit: cover;
+}
+.reserve-header-text {
+    background-color: #495e57;
+    padding: 0 3rem 0 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    border-radius: 0.5rem;
+}
+.redirect-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12vw;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.redirect-button {
+    background-color: #464646;
+    color: white !important;
+    padding: 2vh 2rem 2vh 2rem;
+    border-radius: 0.5rem;
+    min-width: 12vw;
+    font-family: "Karla";
+    font-size: 18px;
+}
+.redirect-button:hover {
+    background-color: #f4ce14;
+    color: #464646 !important;
+    transition: 0.2s;
+}
